@@ -199,70 +199,85 @@
 		</div>
 	</div>
 	<div class="container w960">
-		<div class=""row1>
-			<form class="form-inline">
+	<form class="reserveform" role="form" onsubmit="return formValidation()">
+		<div class="row">
+  			<div class="col-xs-4">
   				<div class="form-group">
-    				<label for="InputName1">First Name</label>
-    				<input type="text" class="form-control" id="InputName1" placeholder="Jane">
+    				<label for="firstname">First Name</label>
+    				<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Jane">
   				</div>
-  				<div class="form-group">
-    				<label for="InputEmail2">Last Name</label>
-    				<input type="email" class="form-control" id="InputName2" placeholder="Doe">
-  				</div>
-  				<div class="form-group">
-    				<label for="InputPhone1">Phone Number</label>
-    				<input type="text" class="form-control" id="InputPhone1" placeholder="###-###-####">
-  				</div>
-  			</form>
+  			</div>
   		</div>
-  		<div class="row2">
-  			<form class="form-inline">
-  			<fieldset class="form-group">
-    			<label for="guestSelect1">Number of Guests</label>
-    				<select class="form-control" id="guestSelect1">
-      				<option>1</option>
-      				<option>2</option>
-      				<option>3</option>
-      				<option>4</option>
-      				<option>5</option>
-      				<option>6</option>
-      				<option>7</option>
-      				<option>8</option>
-      				<option>9</option>
-      				<option>10</option>
-      				<option>11</option>
-      				<option>12</option>
-    				</select>
-  			</fieldset>
+
+  		<div class="row">
+  			<div class="col-xs-4">
   				<div class="form-group">
-    				<label for="InputDate1">Date</label>
-    				<input type="text" class="form-control" id="InputDate1" placeholder="mm/dd/yyyy">
+    				<label for="lastname">Last Name</label>
+    				<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Doe">
   				</div>
+  			</div>
+  		</div>	
+
+  		<div class="row">
+  			<div class="col-xs-4">
   				<div class="form-group">
-    				<label for="InputHour1">Hour</label>
-    				<input type="text" class="form-control" id="InputHour1" placeholder="13">
+    				<label for="tel">Phone Number</label>
+    				<input type="text" class="form-control" id="tel" name="tel" placeholder="###-###-####">
   				</div>
-  			</form>
+  			</div>
   		</div>
-  		<div class="row3">
-  			<form class="form-inline">
+
+  		<div class="row">
+  			<div class="col-xs-4">
+  				<fieldset class="form-group">
+    				<label for="partysize">Number of Guests</label>
+    					<select class="form-control" id="partysize" name="partysize">
+      					<option>1</option>
+      					<option>2</option>
+      					<option>3</option>
+      					<option>4</option>
+      					<option>5</option>
+      					<option>6</option>
+      					<option>7</option>
+      					<option>8</option>
+      					<option>9</option>
+      					<option>10</option>
+      					<option>11</option>
+      					<option>12</option>
+    					</select>
+  				</fieldset>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-xs-4">
   				<div class="form-group">
-    				<label for="InputMinute1">Minute</label>
-    				<input type="text" class="form-control" id="InputMinute1" placeholder="00">
+    				<label for="date">Date</label>
+    				<input type="text" class="form-control" id="date" name="date" placeholder="mm-dd-yyyy">
   				</div>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-xs-4">
   				<div class="form-group">
-    				<label for="InputAM1">AM</label>
-    				<input type="text" class="form-control" id="InputAM1" placeholder="AM">
+    				<label for="time">Time</label>
+    				<input type="text" class="form-control" id="hour" name="hour" placeholder="Hour">
+    				<input type="text" class="form-control" id="minute" name="minute" placeholder="Minute">
+    				<fieldset class="form-group">
+    					<select class="form-control" id="ampm" name="ampm">
+      					<option>AM</option>
+      					<option>PM</option>
+    					</select>
+  				</fieldset>
   				</div>
-				<div class="form-group">
-    				<label for="InputPM1">PM</label>
-    				<input type="text" class="form-control" id="InputPM1" placeholder="PM">
-  				</div>
-			</form>
-		</div>
+  			</div>
+  		</div>
+
 		<div class="row">
 			<button class="button">Make Reservations</button>
 		</div>
+	</form>
     </div>
 	</section>
   
